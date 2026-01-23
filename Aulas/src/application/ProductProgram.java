@@ -23,6 +23,10 @@ public class ProductProgram {
 
         Product p1 = new Product(name, price, quantity);
 
+        //Teste do get e set
+        p1.setName("Computer");
+        System.out.println("Updated name: "+ p1.getName());
+
         //Exibição do produto
         System.out.println();
         System.out.println("Product data:" + p1);

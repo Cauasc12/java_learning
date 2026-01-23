@@ -1,12 +1,13 @@
 package entities;
 
 public class Product {
+    //Atributos
     private String name;
     private double price;
     private int quantity;
 
+    //Construtores
     public Product(){
-
     }
 
     public Product(String name, double price, int quantity){
@@ -21,18 +22,38 @@ public class Product {
         this.quantity = 0;
     }
 
-    public double totalValueInStock(){
+    //Geters
+    public String getName(){
+        return name;
+    }
 
+    public double getPrice(){
+        return price;
+    }
+
+    public int getQuantity(){
+        return quantity;
+    }
+
+    //Seters
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    //Métodos
+    public double totalValueInStock(){
         return price * quantity;
     }
 
     public void addProducts(int quantity){
-
         this.quantity += quantity;
     }
 
     public void removeProducts(int quantity){
-
         this.quantity -= quantity;
     }
 
